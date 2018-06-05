@@ -29,7 +29,7 @@ if(clickedColor === pickedColor){
     alert("correct!");
     }
     else{
-        alert("wrong")
+        this.style.backgroundColor = "#232323";
     }
 });
 }
