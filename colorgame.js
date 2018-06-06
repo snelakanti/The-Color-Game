@@ -10,7 +10,7 @@ var colors = [
 ]
 
 var squares = document.querySelectorAll(".square");
-var pickedColor = colors[3];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 
@@ -45,4 +45,10 @@ function changeColor(color){
     squares[i].style.backgroundColor = color;
     }
     //change each color to match given color
+}
+
+function pickColor(){
+
+var random = Math.floor(Math.random() * colors.length);
+return colors[random];
 }
