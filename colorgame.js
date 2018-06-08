@@ -53,6 +53,8 @@ reset.addEventListener("click", function(){
    //change color display to match picked color
    colorDisplay.textContent = pickedColor;
    //change colors of squares
+   this.textContent = "New Colors";
+messageDisplay.textContent = "";
    for(var i = 0; i < squares.length; i ++){
        squares[i].style.backgroundColor = colors[i];
    }
