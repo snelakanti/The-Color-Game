@@ -45,3 +45,14 @@ h1{
 
     background: blue;
 }
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%; /*100% of containing element */
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+}
