@@ -1,11 +1,11 @@
 // alert("connected");
 
 var colors = generateRandomColors(6);
-
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
+var h1 = document.querySelector("h1");
 
 colorDisplay.textContent = pickedColor;
 
@@ -22,6 +22,7 @@ var clickedColor = this.style.backgroundColor;
 if(clickedColor === pickedColor){
     messageDisplay.textContent = "Correct!";
     changeColor(clickedColor);
+    h1.style.background = clickedColor;
     }
     else{
         this.style.backgroundColor = "#232323";
@@ -64,5 +65,5 @@ function randomColor(){
 var r = Math.floor(Math.random() * 256);
 var b = Math.floor(Math.random() * 256);
 var g = Math.floor(Math.random() * 256);
-return "rgb(" + r + "," + g + "," + b + ")";
+return "rgb(" + r + "," + " " + g + "," + " " + b + ")";
 }
