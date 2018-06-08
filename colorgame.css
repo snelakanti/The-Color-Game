@@ -10,6 +10,7 @@ background: purple;
 padding-bottom: 30%;
 float: left;
 margin:1.66%;
+border-radius: 50%;
 }
 
 #container{
@@ -33,6 +34,11 @@ h1{
 
 }
 
+#message{
+display:  inline-block;
+width: 20%;
+}
+
 
 #stripe{
     background: white;
@@ -43,7 +49,8 @@ h1{
 
 .selected {
 
-    background: blue;
+    color:white;
+    background: steelblue;
 }
 
 button {
@@ -55,4 +62,12 @@ button {
     color: steelblue;
     letter-spacing: 1px;
     font-size: inherit;
+    transition: all 0.4s;
+
+
+}
+
+button:hover{
+    color:white;
+    background: steelblue;
 }
