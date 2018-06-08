@@ -7,6 +7,19 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var reset = document.querySelector("#reset");
+var easy = document.querySelector("#easy");
+var hard = document.querySelector("#hard");
+
+easy.addEventListener("click", function(){
+    hard.classList.remove("selected");
+    easy.classList.add("selected");
+});
+
+hard.addEventListener("click", function(){
+    easy.classList.remove("selected");
+    hard.classList.add("selected");
+});
+
 
 reset.addEventListener("click", function(){
    //generate new colors
